@@ -10,7 +10,7 @@ class Solution:
       """
 
     # Write your code here
-    def init(self, size):
+    def _init_(self, size):
         """Inits Solution with stack, queue, size, top, front and rear.
         Arguments:
           size: An integer to set the size of stack and queue.
@@ -94,8 +94,8 @@ class Solution:
         """
         if not self.is_queue_empty():
             self.front += 1
-            return self.queue[self.front - 1]
-               
+            return self.queue[self.front - 1] 
+                
 
 
 # read the string text
